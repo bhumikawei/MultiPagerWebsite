@@ -1,0 +1,65 @@
+.main-banner {
+  overflow: hidden;
+  position: relative;
+  min-height: 360px;
+  background: transparent url("/MultiPagerWebsite/images12/image3.jpg") no-repeat scroll center center;
+  background-size: cover;
+}
+@media screen and (min-width: 992px) {
+  .main-banner {
+    height: 0;
+    padding-top: 56.25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-banner {
+    height: 670px;
+    padding-top: 0;
+  }
+}
+.main-banner.banner-small {
+  height: 360px;
+  padding-top: 0;
+}
+.main-banner video#backgroundVideo {
+  display: none;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .main-banner video#backgroundVideo {
+    display: block;
+  }
+}
+.main-banner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+.main-banner .banner-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  z-index: 200;
+}
+.main-banner .banner-description {
+  font-size: 18px;
+}
+@media screen and (min-width: 992px) {
+  .main-banner .banner-description {
+    font-size: 22px;
+  }
+}
