@@ -1,0 +1,119 @@
+@import "variables_and_mixins.scss";
+
+.category-card {
+    position: relative;
+    border-radius: $border-radius;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+
+    .category-card-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.parallax-section {
+    height: 460px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .btn {
+        box-shadow: $shadow;
+    }
+
+    &.parallax-section-1 {
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/image1.jpg);
+    }
+
+    &.parallax-section-2 {
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/image2.jpg);
+    }
+}
+
+.custom-slider-section {
+    ul.slick-dots {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: 0 20px;
+
+            @media screen and (min-width: 991px) {
+                padding: 0 60px;
+            }
+
+            &.slick-active button {
+                background: $highlight-secondary-color;
+                color: $light-accent;
+            }
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            font-weight: bold;
+            background: $light-gray-2;
+            color: $dark-accent;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+.slick-slide.custom-slider-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    img {
+        display: none;
+    }
+
+    .slide-text {
+        width: 75%;
+    }
+}
+
+.parallax-section,
+.category-card,
+.custom-slider-slide {
+    color: $light-accent;
+    text-shadow: $shadow;
+
+    h2,
+    h3,
+    p {
+        color: $light-accent;
+        text-shadow: $shadow;
+    }
+}

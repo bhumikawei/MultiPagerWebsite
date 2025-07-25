@@ -1,0 +1,109 @@
+@import "variables_and_mixins.scss";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: $dark-gray;
+}
+
+a {
+  color: $highlight-primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $highlight-primary-color-hover;
+  }
+}
+
+.section-text {
+  font-size: 18px;
+  @media screen and (min-width: $lg) {
+    font-size: 22px;
+  }
+}
+
+.list-inline {
+  display: flex;
+}
+
+.main-content {
+  background-color: #e9ecef;
+}
+
+.box-white {
+  border: 1px solid #dee2e6;
+  background-color: $light-accent;
+  @include border-radius($border-radius);
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  @include transition(all 0.3s linear);
+
+  &.btn-primary {
+    background-color: $highlight-primary-color;
+
+    &:hover {
+      background-color: $highlight-primary-color-hover;
+      @include transition(all 0.3s linear);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $highlight-secondary-color;
+
+    &:hover {
+      background-color: $highlight-secondary-color-hover;
+      @include transition(all 0.3s linear);
+    }
+  }
+}
+
+.text-primary {
+  color: $highlight-primary-color !important;
+}
+
+.text-secondary {
+  color: $highlight-secondary-color !important;
+}
+
+img {
+  border-radius: $border-radius;
+}
+
+.img-pull-left {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $md) {
+    float: left;
+    width: 65%;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.img-pull-right {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $md) {
+    float: right;
+    width: 65%;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}

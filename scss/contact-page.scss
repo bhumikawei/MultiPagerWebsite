@@ -1,0 +1,23 @@
+@import "variables_and_mixins.scss";
+
+label {
+  font-weight: bold;
+}
+
+.input-validation-error {
+  border: 1px solid $highlight-tertiary-color;
+}
+
+.field-validation-error {
+  display: block;
+  padding-top: 3px;
+  color: $highlight-tertiary-color;
+}
+
+.company-info ul {
+  padding-left: 20px;
+}
+
+.map-section iframe {
+  width: 100%;
+}

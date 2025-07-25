@@ -1,0 +1,33 @@
+@import "variables_and_mixins.scss";
+
+.breadcrumb,
+.subnav-container {
+  background-color: $light-accent;
+}
+
+.subnav {
+  a {
+    display: block;
+    font-weight: 400;
+    border-bottom: 1px solid #dee2e6;
+    @include transition(all 0.3s linear);
+
+    &:hover,
+    &.active {
+      font-weight: bold;
+      border-bottom: 1px solid $highlight-secondary-color;
+      @include transition(all 0.3s linear);
+    }
+  }
+}
+
+.gallery-section {
+  width: 100%;
+}
+
+.gallery-image {
+  overflow: hidden;
+  width: 100%;
+  @include border-radius($border-radius);
+  @include box-shadow(2px 2px 6px rgba(0, 0, 0, 0.3));
+}
