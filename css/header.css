@@ -1,0 +1,34 @@
+.navbar {
+  border-bottom: 1px solid #000;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-toggle:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link:hover, .nav-link.active {
+  color: #444444;
+}
+.nav-link:hover:before, .nav-link.active:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eb5a2d;
+}
+@media screen and (min-width: 991px) {
+  .nav-link:hover:before, .nav-link.active:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
