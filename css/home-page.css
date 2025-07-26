@@ -1,0 +1,111 @@
+.category-card {
+  position: relative;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.category-card .category-card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-section {
+  height: 460px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.parallax-section .btn {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+.parallax-section.parallax-section-1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/image1.jpg);
+}
+.parallax-section.parallax-section-2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/image2.jpg);
+}
+
+.custom-slider-section ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.custom-slider-section ul.slick-dots li {
+  padding: 0 20px;
+}
+@media screen and (min-width: 991px) {
+  .custom-slider-section ul.slick-dots li {
+    padding: 0 60px;
+  }
+}
+.custom-slider-section ul.slick-dots li.slick-active button {
+  background: #eb5a2d;
+  color: #fff;
+}
+.custom-slider-section ul.slick-dots li:focus {
+  border: none;
+  outline: none;
+}
+.custom-slider-section ul.slick-dots button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  background: #dddddd;
+  color: #000;
+}
+.custom-slider-section ul.slick-dots button:focus {
+  border: none;
+  outline: none;
+}
+
+.slick-slide.custom-slider-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.slick-slide.custom-slider-slide img {
+  display: none;
+}
+.slick-slide.custom-slider-slide .slide-text {
+  width: 75%;
+}
+
+.parallax-section,
+.category-card,
+.custom-slider-slide {
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+.parallax-section h2,
+.parallax-section h3,
+.parallax-section p,
+.category-card h2,
+.category-card h3,
+.category-card p,
+.custom-slider-slide h2,
+.custom-slider-slide h3,
+.custom-slider-slide p {
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
