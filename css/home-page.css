@@ -30,10 +30,10 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
 }
 .parallax-section.parallax-section-1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/image1.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/MultiPagerWebsite/images12/image3.jpg);
 }
 .parallax-section.parallax-section-2 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/image2.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/MultiPagerWebsite/images12/image6.jpg);
 }
 
 .custom-slider-section ul.slick-dots {

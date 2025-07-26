@@ -1,0 +1,21 @@
+label {
+  font-weight: bold;
+}
+
+.input-validation-error {
+  border: 1px solid #dc3545;
+}
+
+.field-validation-error {
+  display: block;
+  padding-top: 3px;
+  color: #dc3545;
+}
+
+.company-info ul {
+  padding-left: 20px;
+}
+
+.map-section iframe {
+  width: 100%;
+}
