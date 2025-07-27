@@ -43,35 +43,16 @@
 }
 
 
-.custom-slider-section {
-    ul.slick-dots {
-        position: static;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        list-style: none;
-
-        li {
-            padding: 0 20px;
 
 
-            @media screen and (min-width: 991px) {
-                padding: 0 60px;
-            }
+.parallax-section,
+.category-card {
+    color: $light-accent;
+    text-shadow: $shadow;
 
-            &.slick-active button {
-                background: $highlight-secondary-color;
-                color: $light-accent;
-            }
 
-            &:focus {
-                border: none;
-                outline: none;
-            }
-        }
-        button {
-            width: 40px;
-            height: 40px;
-        }
+    h2, h3, p {
+        color: $light-accent;
+        text-shadow: $shadow;
     }
 }

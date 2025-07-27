@@ -36,30 +36,15 @@
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/MultiPagerWebsite/images12/image6.jpg);
 }
 
-.custom-slider-section ul.slick-dots {
-  position: static;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-}
-.custom-slider-section ul.slick-dots li {
-  padding: 0 20px;
-}
-@media screen and (min-width: 991px) {
-  .custom-slider-section ul.slick-dots li {
-    padding: 0 60px;
-  }
-}
-.custom-slider-section ul.slick-dots li.slick-active button {
-  background: #eb5a2d;
+.parallax-section,
+.category-card {
   color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
 }
-.custom-slider-section ul.slick-dots li:focus {
-  border: none;
-  outline: none;
-}
-.custom-slider-section ul.slick-dots button {
-  width: 40px;
-  height: 40px;
+.parallax-section h2, .parallax-section h3, .parallax-section p,
+.category-card h2,
+.category-card h3,
+.category-card p {
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
 }
